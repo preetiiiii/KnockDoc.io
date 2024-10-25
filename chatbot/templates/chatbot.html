@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knockdoc - Chatbot</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <style>
+        .chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/chatbot">Chatbot</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact a Doctor</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Knockdoc Chatbot</h1>
+        <p>Chat with our AI-driven medical assistant. Enter your symptoms and get immediate advice or connect with a doctor for further help.</p>
+
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                Knockdoc - Your Medical Assistant
+            </div>
+            <div class="chat-container">
+                <div class="chat-box" id="chat-box">
+                    <div class="message bot-message">
+                        Hello! I'm Knockdoc, your medical assistant. Please enter your symptoms so I can diagnose your condition!
+                    </div>
+                </div>
+                <form id="chat-form">
+                    <input type="text" id="user-input" placeholder="Enter symptoms..." autocomplete="off">
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Knockdoc - Your Medical Assistant</p>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
